@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 0)
     (zones 0)
     (modules 0)
@@ -100,6 +100,18 @@
     (uvia_drill 0.1)
   )
 
+  (dimension 16.51 (width 0.15) (layer Dwgs.User)
+    (gr_text 15.89 (at 96.49 131.445 90) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 101.6 123.19) (xy 97.203579 123.19)))
+    (feature2 (pts (xy 101.6 139.7) (xy 97.203579 139.7)))
+    (crossbar (pts (xy 97.79 139.7) (xy 97.79 123.19)))
+    (arrow1a (pts (xy 97.79 123.19) (xy 98.376421 124.316504)))
+    (arrow1b (pts (xy 97.79 123.19) (xy 97.203579 124.316504)))
+    (arrow2a (pts (xy 97.79 139.7) (xy 98.376421 138.573496)))
+    (arrow2b (pts (xy 97.79 139.7) (xy 97.203579 138.573496)))
+  )
   (dimension 19.05 (width 0.15) (layer Dwgs.User)
     (gr_text 15 (at 111.125 149.89) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))

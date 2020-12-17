@@ -581,7 +581,7 @@ Wire Wire Line
 	8300 3900 8550 3900
 Wire Wire Line
 	6050 2850 5900 2850
-Text Label 5800 2850 0    50   ~ 0
+Text Label 5900 2850 0    50   ~ 0
 D13-SCK
 $Comp
 L Device:R R?

@@ -364,7 +364,7 @@ F 3 "~" H 2500 6900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 6700 2000 6700
-Text Notes 2200 6150 0    50   ~ 0
+Text Notes 2200 6300 0    50   ~ 0
 RESET Pushbutton
 Text Label 2000 6700 0    50   ~ 0
 RESET
@@ -762,23 +762,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5FE47BCE
-P 8550 1900
-F 0 "#PWR?" H 8550 1650 50  0001 C CNN
-F 1 "GND" H 8555 1727 50  0000 C CNN
-F 2 "" H 8550 1900 50  0001 C CNN
-F 3 "" H 8550 1900 50  0001 C CNN
-	1    8550 1900
+P 8450 1900
+F 0 "#PWR?" H 8450 1650 50  0001 C CNN
+F 1 "GND" H 8455 1727 50  0000 C CNN
+F 2 "" H 8450 1900 50  0001 C CNN
+F 3 "" H 8450 1900 50  0001 C CNN
+	1    8450 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FE49630
-P 8550 1350
-F 0 "#PWR?" H 8550 1100 50  0001 C CNN
-F 1 "GND" H 8555 1177 50  0000 C CNN
-F 2 "" H 8550 1350 50  0001 C CNN
-F 3 "" H 8550 1350 50  0001 C CNN
-	1    8550 1350
+P 8450 1350
+F 0 "#PWR?" H 8450 1100 50  0001 C CNN
+F 1 "GND" H 8455 1177 50  0000 C CNN
+F 2 "" H 8450 1350 50  0001 C CNN
+F 3 "" H 8450 1350 50  0001 C CNN
+	1    8450 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -820,7 +820,7 @@ F 3 " ~" H 3225 6250 50  0001 C CNN
 	1    4500 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 4250 6050 0    50   ~ 0
+Text Notes 4150 6050 0    50   ~ 0
 Programming
 $Comp
 L power:+3.3V #PWR?
@@ -860,4 +860,280 @@ Text Label 5000 6600 0    50   ~ 0
 D12-MISO
 Text Label 5000 6700 0    50   ~ 0
 D11-MOSI
+Text Notes 4900 850  0    50   ~ 0
+3.3v coin cell
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FDC7470
+P 4600 1300
+F 0 "BT?" V 4345 1350 50  0000 C CNN
+F 1 "Battery_Cell" V 4436 1350 50  0000 C CNN
+F 2 "" V 4600 1360 50  0001 C CNN
+F 3 "~" V 4600 1360 50  0001 C CNN
+	1    4600 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDC846F
+P 4500 1300
+F 0 "#PWR?" H 4500 1050 50  0001 C CNN
+F 1 "GND" H 4505 1127 50  0000 C CNN
+F 2 "" H 4500 1300 50  0001 C CNN
+F 3 "" H 4500 1300 50  0001 C CNN
+	1    4500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5FDCA975
+P 5200 1300
+F 0 "SW?" H 5200 1535 50  0000 C CNN
+F 1 "SW_SPST" H 5200 1444 50  0000 C CNN
+F 2 "" H 5200 1300 50  0001 C CNN
+F 3 "~" H 5200 1300 50  0001 C CNN
+	1    5200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1300 5000 1300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FDD1B0C
+P 5650 1300
+F 0 "#PWR?" H 5650 1150 50  0001 C CNN
+F 1 "+3.3V" H 5665 1473 50  0000 C CNN
+F 2 "" H 5650 1300 50  0001 C CNN
+F 3 "" H 5650 1300 50  0001 C CNN
+	1    5650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1300 5400 1300
+Text Notes 8600 4050 0    50   ~ 0
+Red, green, and yellow (2700k white) LEDs
+Text Notes 7700 4750 0    50   ~ 0
+Capacative Touch Ornaments
+Wire Wire Line
+	8450 1900 8550 1900
+Wire Wire Line
+	8450 1350 8550 1350
+$Comp
+L Device:R R?
+U 1 1 5FDDD1EE
+P 6300 5300
+F 0 "R?" H 6370 5346 50  0000 L CNN
+F 1 "4.7M" H 6370 5255 50  0000 L CNN
+F 2 "" V 6230 5300 50  0001 C CNN
+F 3 "~" H 6300 5300 50  0001 C CNN
+	1    6300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDDD9FE
+P 6700 5300
+F 0 "R?" H 6770 5346 50  0000 L CNN
+F 1 "1k" H 6770 5255 50  0000 L CNN
+F 2 "" V 6630 5300 50  0001 C CNN
+F 3 "~" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5150 6300 4950
+Wire Wire Line
+	6700 5150 6700 4950
+Wire Wire Line
+	6700 4950 6600 4950
+Wire Wire Line
+	6300 4950 6200 4950
+Wire Wire Line
+	6300 5450 6300 5550
+Wire Wire Line
+	6300 5550 6700 5550
+Wire Wire Line
+	6700 5550 6700 5450
+Text Notes 7300 5900 0    50   ~ 0
+4.7M for send pin, 1k for receive pin protection
+Text Label 6200 4950 0    50   ~ 0
+A2
+Text Label 6600 4950 0    50   ~ 0
+A3
+Text Notes 6300 5650 0    50   ~ 0
+Ornament 1
+$Comp
+L Connector:TestPoint_Alt TP?
+U 1 1 5FDF48EE
+P 6700 5550
+F 0 "TP?" V 6654 5738 50  0000 L CNN
+F 1 "TestPoint_Alt" V 6745 5738 50  0000 L CNN
+F 2 "" H 6900 5550 50  0001 C CNN
+F 3 "~" H 6900 5550 50  0001 C CNN
+	1    6700 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 6700 5550
+$Comp
+L Device:R R?
+U 1 1 5FDFAA19
+P 7550 5300
+F 0 "R?" H 7620 5346 50  0000 L CNN
+F 1 "4.7M" H 7620 5255 50  0000 L CNN
+F 2 "" V 7480 5300 50  0001 C CNN
+F 3 "~" H 7550 5300 50  0001 C CNN
+	1    7550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDFAA1F
+P 7950 5300
+F 0 "R?" H 8020 5346 50  0000 L CNN
+F 1 "1k" H 8020 5255 50  0000 L CNN
+F 2 "" V 7880 5300 50  0001 C CNN
+F 3 "~" H 7950 5300 50  0001 C CNN
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5150 7550 4950
+Wire Wire Line
+	7950 5150 7950 4950
+Wire Wire Line
+	7950 4950 7850 4950
+Wire Wire Line
+	7550 4950 7450 4950
+Wire Wire Line
+	7550 5450 7550 5550
+Wire Wire Line
+	7550 5550 7950 5550
+Wire Wire Line
+	7950 5550 7950 5450
+Text Label 7450 4950 0    50   ~ 0
+A4
+Text Label 7850 4950 0    50   ~ 0
+A5
+Text Notes 7550 5650 0    50   ~ 0
+Ornament 2\n
+$Comp
+L Connector:TestPoint_Alt TP?
+U 1 1 5FDFAA2F
+P 7950 5550
+F 0 "TP?" V 7904 5738 50  0000 L CNN
+F 1 "TestPoint_Alt" V 7995 5738 50  0000 L CNN
+F 2 "" H 8150 5550 50  0001 C CNN
+F 3 "~" H 8150 5550 50  0001 C CNN
+	1    7950 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 7950 5550
+$Comp
+L Device:R R?
+U 1 1 5FE05383
+P 8750 5300
+F 0 "R?" H 8820 5346 50  0000 L CNN
+F 1 "4.7M" H 8820 5255 50  0000 L CNN
+F 2 "" V 8680 5300 50  0001 C CNN
+F 3 "~" H 8750 5300 50  0001 C CNN
+	1    8750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE05389
+P 9150 5300
+F 0 "R?" H 9220 5346 50  0000 L CNN
+F 1 "1k" H 9220 5255 50  0000 L CNN
+F 2 "" V 9080 5300 50  0001 C CNN
+F 3 "~" H 9150 5300 50  0001 C CNN
+	1    9150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5150 8750 4950
+Wire Wire Line
+	9150 5150 9150 4950
+Wire Wire Line
+	9150 4950 9050 4950
+Wire Wire Line
+	8750 4950 8650 4950
+Wire Wire Line
+	8750 5450 8750 5550
+Wire Wire Line
+	8750 5550 9150 5550
+Wire Wire Line
+	9150 5550 9150 5450
+Text Label 8650 4950 0    50   ~ 0
+A6
+Text Label 9050 4950 0    50   ~ 0
+A7
+Text Notes 8750 5650 0    50   ~ 0
+Ornament 3
+$Comp
+L Connector:TestPoint_Alt TP?
+U 1 1 5FE05399
+P 9150 5550
+F 0 "TP?" V 9104 5738 50  0000 L CNN
+F 1 "TestPoint_Alt" V 9195 5738 50  0000 L CNN
+F 2 "" H 9350 5550 50  0001 C CNN
+F 3 "~" H 9350 5550 50  0001 C CNN
+	1    9150 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 9150 5550
+$Comp
+L Device:R R?
+U 1 1 5FE0FE2A
+P 9950 5300
+F 0 "R?" H 10020 5346 50  0000 L CNN
+F 1 "4.7M" H 10020 5255 50  0000 L CNN
+F 2 "" V 9880 5300 50  0001 C CNN
+F 3 "~" H 9950 5300 50  0001 C CNN
+	1    9950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE0FE30
+P 10350 5300
+F 0 "R?" H 10420 5346 50  0000 L CNN
+F 1 "1k" H 10420 5255 50  0000 L CNN
+F 2 "" V 10280 5300 50  0001 C CNN
+F 3 "~" H 10350 5300 50  0001 C CNN
+	1    10350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5150 9950 4950
+Wire Wire Line
+	10350 5150 10350 4950
+Wire Wire Line
+	10350 4950 10250 4950
+Wire Wire Line
+	9950 4950 9850 4950
+Wire Wire Line
+	9950 5450 9950 5550
+Wire Wire Line
+	9950 5550 10350 5550
+Wire Wire Line
+	10350 5550 10350 5450
+Text Label 9850 4950 0    50   ~ 0
+D11
+Text Label 10250 4950 0    50   ~ 0
+D12
+Text Notes 10100 5650 0    50   ~ 0
+Star
+$Comp
+L Connector:TestPoint_Alt TP?
+U 1 1 5FE0FE40
+P 10350 5550
+F 0 "TP?" V 10304 5738 50  0000 L CNN
+F 1 "TestPoint_Alt" V 10395 5738 50  0000 L CNN
+F 2 "" H 10550 5550 50  0001 C CNN
+F 3 "~" H 10550 5550 50  0001 C CNN
+	1    10350 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 10350 5550
 $EndSCHEMATC
